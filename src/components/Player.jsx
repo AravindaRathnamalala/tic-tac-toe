@@ -22,7 +22,6 @@ const Player = ({ initialName, symbol, isActive }) => {
 
   return (
     <li>
-      {console.log(isActive)}
       <span className={isActive ? "active" : undefined}>
         {editablePlayerName}
         <span className="player-symbol">{symbol}</span>
