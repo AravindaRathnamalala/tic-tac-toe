@@ -57,9 +57,7 @@ const deriveWinner = (gameBoard, players) => {
 
 function App() {
   const [gameTurns, setGameTurns] = useState([]);
-
   const [players, setPlayers] = useState(PLAYERS);
-
   const activePlayer = derivedActivePlayer(gameTurns);
   const hasDraw = gameTurns.length === 9 && !winner;
   const gameBoard = deriveGameBoard(gameTurns);
